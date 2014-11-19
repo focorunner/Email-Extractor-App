@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<?php
+# Email List Extractor - Mark Coleman
+?>
+<html>
+
+	<head>
+		<title>Email Finder</title>
+	</head>
+	<body style="background-color:#000000;color: #FFFFFF;font-family: Arial;">
+
+<table align="center">
+<tbody><tr><td>
+<h1 style="font-family: arial black;text-align: center;margin:0;">Email List Extractor</h1>
+<div style="text-align: center;width:500px;font-size:8pt;">Finds and extracts all strings with the structure of common valid addresses from messy, out of sorts text files. Doesn't fix invalid email addresses, or validate the extracted addresses.</div>
+<div style="text-align: center;width:500px;font-size:8pt;">If you try it from a file and it doesn't work, try opening the file in a text editor and use copy and past into the textarea below.
+<form method="post" action="extractor.php" enctype="multipart/form-data">
+  <br />
+  <div style="margin: 0 auto;width:220px;"><input style="color: #666666;" type="file" name="upload" /></div>
+  <div style="font-size:8pt;" align="center">(.txt .csv .vcf .xml and other "text" file types)</div><br />
+  <div align="center">- or -</div><br />
+  <div align="center">Paste text containing email addresses below</div>  
+  <div align="center"><textarea name="text" cols="65" rows="12" ></textarea></div>
+  <br /><br />
+  <div align="center">Name for Output File: <input type="text" name="fileName" size="30" value="emails.txt" onFocus="value=''" /></div>
+  <br />
+  <div align="center"><input type="submit" value="EXTRACT EMAIL ADDRESSES" /></div><br />
+  <div align="center"><input type="reset" value="Clear Form"></div>
+</form>
+<br />
+<br />
+<hr>
+<div style="font-size:8pt;color:#999999;text-align:center;">Email List Extractor v1.0.7b by Mark Coleman, Tier 2, Constant Contact Inc.</div>
+</td></tr></tbody>
+</table>
+	</body>
+</html>
