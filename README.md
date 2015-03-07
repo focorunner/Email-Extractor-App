@@ -1,6 +1,6 @@
 # Email-Extractor-App
 
-Extracts emails from messy ASCII text. Works pretty well. 
+PHP-based. Extracts emails from messy ASCII text. Works pretty well. 
 
 Simple app that will accept file or paste ASCII input, and use a RegEx
 matching function to extract email addressed, so they can be displayed
